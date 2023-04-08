@@ -1,0 +1,32 @@
+
+# 07.04.2023r.
+
+print("==Prosty kalkulator==")
+
+
+obliczenia = (input("Wybierz rodzaj obliczeń: dodawanie, odejmowanie, mnożenie, dzielenie:\n"))
+
+
+a = int(input("Podaj pierwszą liczbę: "))
+
+b = int(input("Podaj drugą liczbę: "))
+
+
+if obliczenia == "dodawanie":
+    print("Wynik dodawania liczby:", a, "i liczby:", b, "wynosi:", a + b)
+
+elif obliczenia == "odejmowanie":
+    print("Wynik odejmowania liczby:", a, "i liczby:", b, "wynosi:", a - b)
+
+elif obliczenia == "mnożenie":
+    print("Wynik mnożenia liczby:", a, "i liczby:", b, "wynosi:", a * b)
+
+elif obliczenia == "dzielenie":
+    if a == 0:
+        print("Nie dziel przez zero")
+    else:
+        print("Wynik dzielenia liczby:", a, "i liczby:", b, "wynosi:", a / b)
+
+
+else:
+    print("niepoprawny wybór")
