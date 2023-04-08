@@ -1,0 +1,1 @@
+pierwsze linijki kodu
