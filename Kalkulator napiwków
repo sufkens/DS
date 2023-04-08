@@ -2,12 +2,12 @@
 
 
 print("Witaj w kalkulatorze napiwków")
-rachunek = int(input("ile wynosi rachunek? "))
+rachunek = float(input("ile wynosi rachunek? "))
 osoby = int(input("na ile osób podzielić rachunek? "))
-napiwek = int(input("ile chcesz dać napiwku? "))
+napiwek = int(input("ile chcesz dac napiwku? "))
 
-obliczony_napiwek = 1 + napiwek / 100
-suma = rachunek * obliczony_napiwek / osoby
+obliczony_napiwek = 1+napiwek / 100
+suma = round(rachunek * obliczony_napiwek / osoby,2)
 
 print(f"Każdy powienien zapłacić {suma} zł")
 
