@@ -1,1 +1,1 @@
-# start
+# prosty kalkulator
