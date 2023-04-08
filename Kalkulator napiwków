@@ -4,9 +4,9 @@
 print("Witaj w kalkulatorze napiwków")
 rachunek = int(input("ile wynosi rachunek? "))
 osoby = int(input("na ile osób podzielić rachunek? "))
-napiwek = int(input("ile chcesz dac napiwku? "))
+napiwek = int(input("ile chcesz dać napiwku? "))
 
-obliczony_napiwek = 1+napiwek / 100
+obliczony_napiwek = 1 + napiwek / 100
 suma = rachunek * obliczony_napiwek / osoby
 
 print(f"Każdy powienien zapłacić {suma} zł")
