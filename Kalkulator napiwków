@@ -1,0 +1,11 @@
+#08.04.23 - zadanie z kursu
+
+print("Witaj w kalkulatorze napiwków")
+rachunek = int(input("ile wynosi rachunek? "))
+osoby = int(input("na ile osób podzielić rachunek? "))
+napiwek = int(input("ile chcesz dac napiwku? "))
+
+obliczony_napiwek = 1 + napiwek / 100
+suma = rachunek * obliczony_napiwek / osoby
+
+print(suma)
