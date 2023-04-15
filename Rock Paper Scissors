@@ -1,0 +1,65 @@
+
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+
+player_number = int(input("What do you choose? 1 = rock, 2 = paper, 3 = scissors: \n"))
+if player_number == 1:
+        print("You chose: \n" + rock)
+elif player_number == 2:
+        print("You chose: \n" + paper)
+elif player_number == 3:
+         print("You chose: \n" + scissors)
+else:
+        print ("Wrong choice")
+        exit()
+
+CPU_number = int(random.randint(1,3))
+
+if player_number == 1 and CPU_number == 1:
+        print("CPU chose:" + rock + "\nDRAW")
+elif player_number == 2 and CPU_number == 2:
+        print("CPU chose:" + paper + "\nDRAW")
+elif player_number == 3 and CPU_number == 3:
+        print("CPU chose:" + scissors + "\nDRAW")
+
+elif player_number == 1 and CPU_number == 2:
+        print("CPU chose:" + paper + "\nYou lose")
+elif player_number == 1 and CPU_number == 3:
+        print("CPU chose:" + scissors + "\nYou Win")
+
+elif player_number == 2 and CPU_number == 3:
+        print("CPU chose:" + scissors + "\nYou lose")
+elif player_number == 2 and CPU_number == 1:
+        print("CPU chose:" + rock + "\nYou Win")
+
+elif player_number == 3 and CPU_number == 1:
+        print("CPU chose:" + rock + "\nYou lose")
+elif player_number == 3 and CPU_number == 2:
+        print("CPU chose:" + paper + "\nYou Win")
